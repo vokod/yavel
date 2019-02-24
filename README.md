@@ -36,25 +36,25 @@ dependencies {
 ### Usage
 
 ```
- Yavel yavel = Yavel.Companion.get(KEY_ALIAS);
- 
- String encryptedString = yavel.encryptString(stringValue);
- String decryptedString = yavel.decryptString(encryptedString);
- 
- String encryptedInt = yavel.encryptInt(intValue);
- int decrypteedInt = yavel.decryptString(encryptedInt);
- 
- String encryptedBoolean = yavel.encryptBoolean(booleanValue);
- Boolean decrypteedBoolean = yavel.decryptString(encryptedBoolean);
- 
- String encryptedLong = yavel.encryptLong(longValue);
- long decrypteedLong = yavel.decryptString(encryptedLong);
- 
- String encryptedFloat = yavel.encryptFloat(floatValue);
- float decrypteedFloat = yavel.decryptString(encryptedFloat);
- 
- String encryptedDouble = yavel.encryptDouble(doubleValue);
- double decrypteedDouble = yavel.decryptString(encryptedDouble);
+val yavel = Yavel.get(KEY_ALIAS)
+
+val encryptedString = yavel.encryptString(stringValue)
+val decryptedString = yavel.decryptString(encryptedString)
+
+val encryptedInt = yavel.encryptInt(intValue)
+val decryptedInt = yavel.decryptInt(encryptedInt)
+
+val encryptedBoolean = yavel.encryptBoolean(booleanValue)
+val decryptedBoolean = yavel.decryptBoolean(encryptedBoolean)
+
+val encryptedLong = yavel.encryptLong(longValue)
+val decryptedLong = yavel.decryptLong(encryptedLong)
+
+val encryptedFloat = yavel.encryptFloat(floatValue)
+val decryptedFloat = yavel.decryptDouble(encryptedFloat)
+
+val encryptedDouble = yavel.encryptDouble(doubleValue)
+val decryptedDouble = yavel.decryptDouble(encryptedDouble)
 ```
 
 ### Compatibility

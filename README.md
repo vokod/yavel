@@ -36,12 +36,25 @@ dependencies {
 ### Usage
 
 ```
- String encryptedString = yavel.encryptString(str);
- String encryptedInt = yavel.encryptInt(value);
- String encryptedBoolean = yavel.encryptBoolean(true);
- String encryptedLong = yavel.encryptLong(value);
- String encryptedFloat = yavel.encryptFloat(value);
- String encryptedDouble = yavel.encryptDouble(value);
+ Yavel yavel = Yavel.Companion.get(KEY_ALIAS);
+ 
+ String encryptedString = yavel.encryptString(stringValue);
+ String decryptedString = yavel.decryptString(encryptedString);
+ 
+ String encryptedInt = yavel.encryptInt(intValue);
+ int decrypteedInt = yavel.decryptString(encryptedInt);
+ 
+ String encryptedBoolean = yavel.encryptBoolean(booleanValue);
+ Boolean decrypteedBoolean = yavel.decryptString(encryptedBoolean);
+ 
+ String encryptedLong = yavel.encryptLong(longValue);
+ long decrypteedLong = yavel.decryptString(encryptedLong);
+ 
+ String encryptedFloat = yavel.encryptFloat(floatValue);
+ float decrypteedFloat = yavel.decryptString(encryptedFloat);
+ 
+ String encryptedDouble = yavel.encryptDouble(doubleValue);
+ double decrypteedDouble = yavel.decryptString(encryptedDouble);
 ```
 
 ### Compatibility

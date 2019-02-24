@@ -85,15 +85,15 @@ private constructor(keyAlias: String) {
         private var yavels: MutableMap<String, Yavel>? = null
 
         @Throws(YavelException::class)
-        operator fun get(keyAlias: String): Yavel? {
+        operator fun get(keyAlias: String): Yavel {
             if (yavels == null) { // if no yavels were created
                 yavels = HashMap(1)
             }
             return if (yavels!!.containsKey(keyAlias)) { // if the yavel in question is in yavels
-                yavels!![keyAlias]
+                yavels!![keyAlias]!!
             } else { // if the yapel in question is NOT in the yavels
                 yavels!![keyAlias] = Yavel(keyAlias)
-                yavels!![keyAlias]
+                yavels!![keyAlias]!!
             }
         }
     }
